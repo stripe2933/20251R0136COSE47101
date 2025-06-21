@@ -6,10 +6,10 @@ import re
 from tqdm import tqdm
 
 path = '../data'
-sido = gpd.read_file(os.path.join(path, 'ctprvn_20230729/ctprvn.shp'), encoding='cp949')
-sgg = gpd.read_file(os.path.join(path, 'sig_20230729/sig.shp'), encoding='cp949')
-emd = gpd.read_file(os.path.join(path, 'emd_20230729/emd.shp'), encoding='cp949')
-li = gpd.read_file(os.path.join(path, 'li_20230729/li.shp'), encoding='cp949')
+sido = gpd.read_file(os.path.join(path, '../data/ctprvn_20230729/ctprvn.shp'), encoding='cp949')
+sgg = gpd.read_file(os.path.join(path, '../data/sig_20230729/sig.shp'), encoding='cp949')
+emd = gpd.read_file(os.path.join(path, '../data/emd_20230729/emd.shp'), encoding='cp949')
+li = gpd.read_file(os.path.join(path, '../data/li_20230729/li.shp'), encoding='cp949')
 
 sido = sido[['CTP_KOR_NM', 'CTPRVN_CD']]
 sgg = sgg[['SIG_KOR_NM', 'SIG_CD']]
